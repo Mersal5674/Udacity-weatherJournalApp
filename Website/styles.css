@@ -1,0 +1,158 @@
+
+/* get the font from google */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* using this so you can have a full body image backgroung */
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    background-image: url("https://source.unsplash.com/1600x900/?nature,sky,night");
+    font-family: 'Ubuntu', sans-serif;
+    background-size: cover;
+}
+
+button {
+    width: 130px;
+    height: 30px;
+    background-color: rgb(216, 216, 216);
+    /* background: #3cf0d86b; */
+    color: #000000;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px rgba(75, 75, 75, 0.541);
+    border-radius: 12px; /* We used this to make the border aren't sharp */
+}
+button:hover, /* We use the hover so whenever the mouse moved on it its color changes even without clicking */
+button:active { /* we use the active so whenever it is clicked */
+    background: #b9b9b9cc;
+    cursor:pointer; /* we use this so the cursor change its chabe standing on the button */
+}
+button:invalid {
+    cursor: not-allowed;
+}
+span{
+    color: rgb(40, 146, 165);
+}
+#header_logo{
+    width: 100%;
+    height: 75px;
+    background: #090f1bda;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 25px; 
+    display: flex; 
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_title{
+    font-weight: 700;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #f7f7f7;
+    display:table;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+
+@media (max-width: 992px){
+    #header_logo{
+        height: 60px;
+        padding: 9px;
+    }
+}
+.container{
+    /* using top to separate the container from the navBar */
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: rgb(241, 232, 232);
+    margin: auto;
+    /* position of an element using 'transform: translate()' */
+    /* position the div in the middle */
+    position: absolute;
+    margin-top: auto;
+    top: 57%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.main_container{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#generate{  
+    margin-bottom: 2px;
+    /* using this to make the text get in the middle of the page*/
+    /* transform: translate(50%, 0%) */
+    outline: none;
+}
+
+.enter_zip_code{
+    font-size: 24px;
+    /* to put a space below the div */
+    margin-bottom: 6px;
+}
+#ZIP_holder{
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 5px;
+    /* To remove the surrondeing unwanted shadow we use
+    border: none; */
+    border: none;
+    background-color: rgba(63, 63, 63, 0.459);
+    color:white;
+}
+
+.enter_your_feelings{
+    margin-bottom: 6px;
+    margin-top: 18px;
+    font-size: 24px;
+}
+#Feelings_holder{
+    height: 30px;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 18px;
+    background-color: rgba(63, 63, 63, 0.459);
+    color:white;
+};
+
+h1.temp{
+    margin: 0;
+    margin-bottom: .4em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 3px;
+}
+
+.title {
+    font-size: 24px;
+    margin-top: 18px;
+}
+.humidity{
+    margin-bottom: 6px;
+}
+.wind{
+    margin-bottom: 6px;
+}
+.feelings{
+    margin-bottom: 6px;
+}
