@@ -1,6 +1,6 @@
 
 // Adding the apikey
-const apiKey = ",&appid=786df401a95e1bf88a0df5d55ab520bb&units=metric";
+const apiKey = ",&appid=&units=metric";
 // adding the baseurl
 const baseUrl = "http://api.openweathermap.org/data/2.5/weather?zip=";
 // Local server we are using
